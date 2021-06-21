@@ -1,0 +1,50 @@
+@import "../../utils/scss/common/mixins";
+
+.genre-list-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include phone {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  @include tablet {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .genre-item-wrapper {
+    padding: 10px 0px;
+    @include phone {
+      padding: 10px 0px;
+    }
+    
+    @include tablet {
+      padding: 10px 0px;
+    }
+    
+    .genre-item {
+      height: 30px;
+      width: 100px;
+      background-color: crimson;
+      margin-right: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      font-size: 13px;
+      cursor: pointer;
+
+      @include phone {
+        width: 100px;
+      }
+      
+      @include tablet {
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.video-preview-wrapper{
+  width: 320px;
+  margin: 10px;
+
+  
+  .video-preview-img {
+    background-size: cover;
+    height: 180px;
+    background-position: center;
+    
+    .video-preview-icon{
+      position: relative;
+      top: 67px;
+      left: 140px;
+    }
+  }
+  
+}

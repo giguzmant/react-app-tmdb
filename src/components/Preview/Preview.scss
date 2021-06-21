@@ -1,0 +1,24 @@
+.category-preview-wrapper {
+  //overflow: auto;
+  padding-bottom: 30px;
+  
+  .category-preview-title {
+    display: flex ;
+    padding-bottom: 15px;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    
+    h3{
+      margin: 0;
+      padding-left: 10px;
+    }
+    
+  }
+  
+  .cards-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+}

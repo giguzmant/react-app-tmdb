@@ -1,0 +1,18 @@
+.tv-summary-data{
+      
+  .tv-summary-parent {
+    display: flex;
+    padding: 3px;
+    
+    .tv-summary-title{
+      font-weight: 600;
+      width: 35%;
+    
+    }
+    
+    .tv-summary-child {
+      width: 65%;
+    }  
+  }
+  
+}

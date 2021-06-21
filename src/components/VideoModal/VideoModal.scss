@@ -1,0 +1,27 @@
+.video-modal-wrapper {
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  animation: fadein 4s;
+
+  .video-modal {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

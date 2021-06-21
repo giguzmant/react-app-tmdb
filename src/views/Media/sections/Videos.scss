@@ -1,0 +1,17 @@
+.videos-wrapper {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  animation: fadein 4s;
+  padding: 0px 109px;
+  justify-content: space-evenly;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

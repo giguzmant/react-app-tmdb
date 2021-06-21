@@ -1,0 +1,78 @@
+@import '../../utils/scss/common/mixins';
+
+.episode-card-wrapper {
+  width: 350px;
+  padding: 20px 8px;
+  animation: fadein 4s;
+
+
+  @include phone {
+    width: 500px;
+
+  }
+  
+ 
+
+  .episode-img {
+    width: 350px;
+    height: 196px;
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: fadein 4s;
+    overflow: hidden;
+    
+    @include phone {
+      width: 500px;
+      height: 375px;
+    }
+    
+    img {
+      width: 350px;
+      animation: fadein 4s;
+      
+      @include phone {
+        width: 500px;
+      }
+
+  
+    }
+    
+  }
+  
+  .episode-name {
+    display: flex;
+    padding: 10px 0px;
+    .episode-num {
+      color: crimson;
+      font-weight: 700;
+      padding-right: 10px;
+      margin: 0;
+    }
+
+    .episode-title {
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+  
+  .episode-overview {
+    
+    p{
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

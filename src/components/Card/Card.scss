@@ -1,0 +1,127 @@
+@import '../../utils/scss/common/mixins';
+
+.card-wrapper {
+  // width: 250px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  animation: fadein 4s;
+
+  .link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    .card-image-wrapper {
+      height: 300px;
+      width: 200px;
+      background-color: #202124;
+      margin: 14px;
+      display: flex;
+      justify-content: center;
+      
+      @include phone {
+        height: 375px;
+        width: 275px;
+      }
+      
+      @include tablet {
+        height: 350px;
+        width: 250px;
+      }
+      
+      
+      img {
+        width: 200px;
+        border-radius: 7px;
+        height: 300px;
+        animation: fadein 4s;
+
+        
+        @include phone {
+          height: 375px;
+          width: 275px;
+        }
+        
+        @include tablet {
+          height: 350px;
+          width: 250px;
+        }
+        &:hover {
+          filter: grayscale(100%);
+          transition: filter 0.6s ease-in;
+        }
+      }
+    }
+
+    .card-title {
+      display: flex;
+      justify-content: flex-start;
+      width: 200px;
+      flex-direction: column;
+      h4 {
+        margin: 0;
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+        color: white;
+      }
+
+      span {
+        color: grey;
+        font-weight: 300;
+        font-size: 13px;
+        padding: 5px 0px;
+      }
+
+      .card-year-vote {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        .card-year {
+          font-size: 13px;
+          color: grey;
+        }
+
+        .card-vote {
+          font-weight: 800;
+          font-size: 13px;
+          color: #ffc107;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.small-card-wrapper {
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+
+  .small-card-image {
+    img {
+      width: 120px;
+      border-radius: 7px;
+
+      &:hover {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

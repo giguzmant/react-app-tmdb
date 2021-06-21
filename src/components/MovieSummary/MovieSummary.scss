@@ -1,0 +1,18 @@
+.movie-summary-data{
+      
+  .movie-summary-parent {
+    display: flex;
+    padding: 3px;
+    
+    .movie-summary-title{
+      font-weight: 600;
+      width: 35%;
+    
+    }
+    
+    .movie-summary-child {
+      width: 65%;
+    }  
+  }
+  
+}

@@ -1,0 +1,155 @@
+@import "../../utils/scss/common/mixins";
+
+.header {
+  animation: fadein 3s;
+
+  .header-wrapper {
+    background-size: cover;
+    background-position: top;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    //padding: 70px;
+    height: 100vh;
+
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+
+    @include phone {
+      height: 90vh;
+      background-position: left;
+
+    }
+    
+    @include tablet {
+      height: 90vh;
+      background-position: left;
+
+    }
+
+    .header-info {
+      padding: 70px;
+      z-index: 100;
+      width: 50%;
+
+      @include phone {
+        width: 70%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+      }
+      
+      @include tablet {
+        width: 70%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+      }
+    }
+
+    .header-average-genres {
+      width: 100%;
+      display: flex;
+      padding: 30px 0px;
+      z-index: 1000;
+
+      .header-average {
+        display: flex;
+        padding-right: 15px;
+
+        .header-average-star {
+          padding-right: 7px;
+        }
+        .header-vote {
+          p {
+            margin: 0;
+          }
+        }
+      }
+      .header-genres {
+        display: flex;
+
+        p {
+          padding-right: 15px;
+          margin: 0;
+        }
+      }
+    }
+
+    .header-data {
+      z-index: 1000;
+
+      .header-title {
+        h1 {
+          margin: 0;
+          font-size: 50px;
+        }
+      }
+
+      .header-button-wrapper {
+        
+        @include phone {
+          display: flex;
+        justify-content: center;
+        }
+        
+        @include tablet {
+          display: flex;
+        justify-content: center;
+        }
+        
+        .header-button {
+          background-color: crimson;
+          border: none;
+          height: 50px;
+          width: 250px;
+          border-radius: 50px;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 800;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.check {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient(
+    360deg,
+    #141414 0px,
+    transparent 100%,
+    transparent
+  );
+
+  @include phone {
+    height: 91vh;
+  }
+  
+  @include tablet {
+    height: 91vh;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

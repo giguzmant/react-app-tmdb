@@ -1,0 +1,26 @@
+@import '../../utils/scss/common/_mixins';
+
+.list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //padding: 30px;
+  animation: fadein 4s;
+  
+  @include phone {
+    padding: 39px;
+  }
+  
+  @include tablet {
+    padding: 39px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

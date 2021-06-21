@@ -1,0 +1,25 @@
+@import '../../../utils/scss/common/mixins';
+
+.seasons-wrapper {
+  padding: 30px 81px;
+  color: white;
+  
+  @include phone {
+    padding: 30px 65px;
+  }
+  
+  select{
+    background-color: #202124;
+    border: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 15px;
+
+    color: #fff;
+    
+    &:focus {
+      outline: none;
+  }
+}
+}

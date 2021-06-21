@@ -1,0 +1,65 @@
+@import '../../../utils/scss/common/mixins';
+
+.overview-wrapper {
+  padding: 50px;
+  display: flex;
+  //font-family: 'Poppins', sans-serif;
+  justify-content: space-evenly;
+  color: white;
+  animation: fadein 4s;
+  
+  @include phone {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .oveview-summary-poster {
+    
+    img {
+      width: 230px;
+      animation: fadein 4s;
+      transition: width 0.6 ease-in;
+
+      @include phone {
+      display: none;
+      }
+      
+      @include tablet {
+        width: 230px;
+      }
+    }
+    
+
+  }
+  
+  
+  .overview-summary-info{
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    
+    @include phone {
+      width: 100%;
+    }
+    .overview-title{
+      h3{
+        margin: 0;
+      }
+    }
+    
+    .overview-summary {
+      p{
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

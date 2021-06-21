@@ -1,0 +1,13 @@
+@import '../../utils/scss/common/_mixins';
+
+.episode-list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  @include phone {
+    justify-content: center;
+    display: flex;
+  }
+
+}

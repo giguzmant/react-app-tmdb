@@ -1,0 +1,25 @@
+@import '../../utils/scss/common/mixins';
+
+.trends-wrapper {
+  padding: 80px 0px;
+  
+  .trends-header {
+    display: flex;
+    color: white;
+    padding: 30px;
+    flex-direction: column;
+
+    .trends-now {
+      display: flex;
+      padding: 40px 0px;
+      
+      h1 {
+        margin: 0;
+        padding-left: 15px;
+      }
+    }
+  }
+  
+  
+  
+}
